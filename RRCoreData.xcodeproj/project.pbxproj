@@ -1,0 +1,436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7872867F144301D700A79815 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7872867E144301D700A79815 /* Cocoa.framework */; };
+		78728689144301D700A79815 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 78728687144301D700A79815 /* InfoPlist.strings */; };
+		7872868D144301D700A79815 /* RRCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7872868C144301D700A79815 /* RRCoreData.m */; };
+		78728695144301D800A79815 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78728694144301D800A79815 /* SenTestingKit.framework */; };
+		78728696144301D800A79815 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7872867E144301D700A79815 /* Cocoa.framework */; };
+		78728699144301D800A79815 /* RRCoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7872867B144301D700A79815 /* RRCoreData.framework */; };
+		7872869F144301D800A79815 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7872869D144301D800A79815 /* InfoPlist.strings */; };
+		787286A2144301D800A79815 /* RRCoreDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 787286A1144301D800A79815 /* RRCoreDataTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		78728697144301D800A79815 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78728671144301D700A79815 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7872867A144301D700A79815;
+			remoteInfo = RRCoreData;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7872867B144301D700A79815 /* RRCoreData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RRCoreData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7872867E144301D700A79815 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		78728681144301D700A79815 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		78728682144301D700A79815 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		78728683144301D700A79815 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		78728686144301D700A79815 /* RRCoreData-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RRCoreData-Info.plist"; sourceTree = "<group>"; };
+		78728688144301D700A79815 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7872868A144301D700A79815 /* RRCoreData-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RRCoreData-Prefix.pch"; sourceTree = "<group>"; };
+		7872868B144301D700A79815 /* RRCoreData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RRCoreData.h; sourceTree = "<group>"; };
+		7872868C144301D700A79815 /* RRCoreData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RRCoreData.m; sourceTree = "<group>"; };
+		78728693144301D800A79815 /* RRCoreDataTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RRCoreDataTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		78728694144301D800A79815 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		7872869C144301D800A79815 /* RRCoreDataTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RRCoreDataTests-Info.plist"; sourceTree = "<group>"; };
+		7872869E144301D800A79815 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		787286A0144301D800A79815 /* RRCoreDataTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RRCoreDataTests.h; sourceTree = "<group>"; };
+		787286A1144301D800A79815 /* RRCoreDataTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RRCoreDataTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		78728677144301D700A79815 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7872867F144301D700A79815 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7872868F144301D800A79815 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78728695144301D800A79815 /* SenTestingKit.framework in Frameworks */,
+				78728696144301D800A79815 /* Cocoa.framework in Frameworks */,
+				78728699144301D800A79815 /* RRCoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7872866F144301D700A79815 = {
+			isa = PBXGroup;
+			children = (
+				78728684144301D700A79815 /* RRCoreData */,
+				7872869A144301D800A79815 /* RRCoreDataTests */,
+				7872867D144301D700A79815 /* Frameworks */,
+				7872867C144301D700A79815 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7872867C144301D700A79815 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7872867B144301D700A79815 /* RRCoreData.framework */,
+				78728693144301D800A79815 /* RRCoreDataTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7872867D144301D700A79815 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7872867E144301D700A79815 /* Cocoa.framework */,
+				78728694144301D800A79815 /* SenTestingKit.framework */,
+				78728680144301D700A79815 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		78728680144301D700A79815 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				78728681144301D700A79815 /* AppKit.framework */,
+				78728682144301D700A79815 /* CoreData.framework */,
+				78728683144301D700A79815 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		78728684144301D700A79815 /* RRCoreData */ = {
+			isa = PBXGroup;
+			children = (
+				7872868B144301D700A79815 /* RRCoreData.h */,
+				7872868C144301D700A79815 /* RRCoreData.m */,
+				78728685144301D700A79815 /* Supporting Files */,
+			);
+			path = RRCoreData;
+			sourceTree = "<group>";
+		};
+		78728685144301D700A79815 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				78728686144301D700A79815 /* RRCoreData-Info.plist */,
+				78728687144301D700A79815 /* InfoPlist.strings */,
+				7872868A144301D700A79815 /* RRCoreData-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7872869A144301D800A79815 /* RRCoreDataTests */ = {
+			isa = PBXGroup;
+			children = (
+				787286A0144301D800A79815 /* RRCoreDataTests.h */,
+				787286A1144301D800A79815 /* RRCoreDataTests.m */,
+				7872869B144301D800A79815 /* Supporting Files */,
+			);
+			path = RRCoreDataTests;
+			sourceTree = "<group>";
+		};
+		7872869B144301D800A79815 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7872869C144301D800A79815 /* RRCoreDataTests-Info.plist */,
+				7872869D144301D800A79815 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		78728678144301D700A79815 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7872867A144301D700A79815 /* RRCoreData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 787286A5144301D800A79815 /* Build configuration list for PBXNativeTarget "RRCoreData" */;
+			buildPhases = (
+				78728676144301D700A79815 /* Sources */,
+				78728677144301D700A79815 /* Frameworks */,
+				78728678144301D700A79815 /* Headers */,
+				78728679144301D700A79815 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RRCoreData;
+			productName = RRCoreData;
+			productReference = 7872867B144301D700A79815 /* RRCoreData.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		78728692144301D800A79815 /* RRCoreDataTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 787286A8144301D800A79815 /* Build configuration list for PBXNativeTarget "RRCoreDataTests" */;
+			buildPhases = (
+				7872868E144301D800A79815 /* Sources */,
+				7872868F144301D800A79815 /* Frameworks */,
+				78728690144301D800A79815 /* Resources */,
+				78728691144301D800A79815 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78728698144301D800A79815 /* PBXTargetDependency */,
+			);
+			name = RRCoreDataTests;
+			productName = RRCoreDataTests;
+			productReference = 78728693144301D800A79815 /* RRCoreDataTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		78728671144301D700A79815 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Pioneering Software, United Kingdom";
+			};
+			buildConfigurationList = 78728674144301D700A79815 /* Build configuration list for PBXProject "RRCoreData" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7872866F144301D700A79815;
+			productRefGroup = 7872867C144301D700A79815 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7872867A144301D700A79815 /* RRCoreData */,
+				78728692144301D800A79815 /* RRCoreDataTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		78728679144301D700A79815 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78728689144301D700A79815 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78728690144301D800A79815 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7872869F144301D800A79815 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		78728691144301D800A79815 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		78728676144301D700A79815 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7872868D144301D700A79815 /* RRCoreData.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7872868E144301D800A79815 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				787286A2144301D800A79815 /* RRCoreDataTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		78728698144301D800A79815 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7872867A144301D700A79815 /* RRCoreData */;
+			targetProxy = 78728697144301D800A79815 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		78728687144301D700A79815 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78728688144301D700A79815 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7872869D144301D800A79815 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7872869E144301D800A79815 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		787286A3144301D800A79815 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		787286A4144301D800A79815 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		787286A6144301D800A79815 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RRCoreData/RRCoreData-Prefix.pch";
+				INFOPLIST_FILE = "RRCoreData/RRCoreData-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		787286A7144301D800A79815 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RRCoreData/RRCoreData-Prefix.pch";
+				INFOPLIST_FILE = "RRCoreData/RRCoreData-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		787286A9144301D800A79815 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RRCoreData/RRCoreData-Prefix.pch";
+				INFOPLIST_FILE = "RRCoreDataTests/RRCoreDataTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		787286AA144301D800A79815 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RRCoreData/RRCoreData-Prefix.pch";
+				INFOPLIST_FILE = "RRCoreDataTests/RRCoreDataTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		78728674144301D700A79815 /* Build configuration list for PBXProject "RRCoreData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				787286A3144301D800A79815 /* Debug */,
+				787286A4144301D800A79815 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		787286A5144301D800A79815 /* Build configuration list for PBXNativeTarget "RRCoreData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				787286A6144301D800A79815 /* Debug */,
+				787286A7144301D800A79815 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		787286A8144301D800A79815 /* Build configuration list for PBXNativeTarget "RRCoreDataTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				787286A9144301D800A79815 /* Debug */,
+				787286AA144301D800A79815 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 78728671144301D700A79815 /* Project object */;
+}
