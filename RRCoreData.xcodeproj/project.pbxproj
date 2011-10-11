@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		7872867F144301D700A79815 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7872867E144301D700A79815 /* Cocoa.framework */; };
 		78728689144301D700A79815 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 78728687144301D700A79815 /* InfoPlist.strings */; };
-		7872868D144301D700A79815 /* RRCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7872868C144301D700A79815 /* RRCoreData.m */; };
 		78728695144301D800A79815 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78728694144301D800A79815 /* SenTestingKit.framework */; };
 		78728696144301D800A79815 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7872867E144301D700A79815 /* Cocoa.framework */; };
 		78728699144301D800A79815 /* RRCoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7872867B144301D700A79815 /* RRCoreData.framework */; };
 		7872869F144301D800A79815 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7872869D144301D800A79815 /* InfoPlist.strings */; };
 		787286A2144301D800A79815 /* RRCoreDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 787286A1144301D800A79815 /* RRCoreDataTests.m */; };
+		787286BD1443344900A79815 /* NSManagedObjectContext+RRCoreData.h in Headers */ = {isa = PBXBuildFile; fileRef = 787286BB1443344900A79815 /* NSManagedObjectContext+RRCoreData.h */; };
+		787286BE1443344900A79815 /* NSManagedObjectContext+RRCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 787286BC1443344900A79815 /* NSManagedObjectContext+RRCoreData.m */; };
+		787286C11443351100A79815 /* RRCoreDataStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 787286BF1443351100A79815 /* RRCoreDataStack.h */; };
+		787286C21443351100A79815 /* RRCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 787286C01443351100A79815 /* RRCoreDataStack.m */; };
+		78ACED9314449852009AF179 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 78ACED9114449852009AF179 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,14 +40,17 @@
 		78728686144301D700A79815 /* RRCoreData-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RRCoreData-Info.plist"; sourceTree = "<group>"; };
 		78728688144301D700A79815 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7872868A144301D700A79815 /* RRCoreData-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RRCoreData-Prefix.pch"; sourceTree = "<group>"; };
-		7872868B144301D700A79815 /* RRCoreData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RRCoreData.h; sourceTree = "<group>"; };
-		7872868C144301D700A79815 /* RRCoreData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RRCoreData.m; sourceTree = "<group>"; };
 		78728693144301D800A79815 /* RRCoreDataTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RRCoreDataTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		78728694144301D800A79815 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		7872869C144301D800A79815 /* RRCoreDataTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RRCoreDataTests-Info.plist"; sourceTree = "<group>"; };
 		7872869E144301D800A79815 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		787286A0144301D800A79815 /* RRCoreDataTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RRCoreDataTests.h; sourceTree = "<group>"; };
 		787286A1144301D800A79815 /* RRCoreDataTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RRCoreDataTests.m; sourceTree = "<group>"; };
+		787286BB1443344900A79815 /* NSManagedObjectContext+RRCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+RRCoreData.h"; sourceTree = "<group>"; };
+		787286BC1443344900A79815 /* NSManagedObjectContext+RRCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+RRCoreData.m"; sourceTree = "<group>"; };
+		787286BF1443351100A79815 /* RRCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRCoreDataStack.h; sourceTree = "<group>"; };
+		787286C01443351100A79815 /* RRCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRCoreDataStack.m; sourceTree = "<group>"; };
+		78ACED9214449852009AF179 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +117,10 @@
 		78728684144301D700A79815 /* RRCoreData */ = {
 			isa = PBXGroup;
 			children = (
-				7872868B144301D700A79815 /* RRCoreData.h */,
-				7872868C144301D700A79815 /* RRCoreData.m */,
+				787286BB1443344900A79815 /* NSManagedObjectContext+RRCoreData.h */,
+				787286BC1443344900A79815 /* NSManagedObjectContext+RRCoreData.m */,
+				787286BF1443351100A79815 /* RRCoreDataStack.h */,
+				787286C01443351100A79815 /* RRCoreDataStack.m */,
 				78728685144301D700A79815 /* Supporting Files */,
 			);
 			path = RRCoreData;
@@ -122,6 +131,7 @@
 			children = (
 				78728686144301D700A79815 /* RRCoreData-Info.plist */,
 				78728687144301D700A79815 /* InfoPlist.strings */,
+				78ACED9114449852009AF179 /* Localizable.strings */,
 				7872868A144301D700A79815 /* RRCoreData-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -153,6 +163,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				787286BD1443344900A79815 /* NSManagedObjectContext+RRCoreData.h in Headers */,
+				787286C11443351100A79815 /* RRCoreDataStack.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				78728689144301D700A79815 /* InfoPlist.strings in Resources */,
+				78ACED9314449852009AF179 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +276,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7872868D144301D700A79815 /* RRCoreData.m in Sources */,
+				787286BE1443344900A79815 /* NSManagedObjectContext+RRCoreData.m in Sources */,
+				787286C21443351100A79815 /* RRCoreDataStack.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +316,14 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
+		78ACED9114449852009AF179 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78ACED9214449852009AF179 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -310,6 +332,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -327,6 +350,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -336,6 +360,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -346,6 +371,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -421,6 +447,7 @@
 				787286A7144301D800A79815 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		787286A8144301D800A79815 /* Build configuration list for PBXNativeTarget "RRCoreDataTests" */ = {
 			isa = XCConfigurationList;
@@ -429,6 +456,7 @@
 				787286AA144301D800A79815 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
