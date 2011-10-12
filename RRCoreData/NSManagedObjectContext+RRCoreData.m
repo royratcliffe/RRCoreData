@@ -43,10 +43,10 @@
 			{
 				reply = (alertBlock ? alertBlock : ^NSApplicationTerminateReply {
 					NSAlert *alert = [[NSAlert alloc] init];
-					[alert setMessageText:NSLocalizedString(@"Could not save changes while quitting. Quit anyway?", nil)];
-					[alert setInformativeText:NSLocalizedString(@"Quitting now will lose any changes you have made since the last successful save.", nil)];
-					[alert addButtonWithTitle:NSLocalizedString(@"Quit Anyway", nil)];
-					[alert addButtonWithTitle:NSLocalizedString(@"Cancel", nil)];
+					[alert setMessageText:NSLocalizedString(@"Could not save changes while quitting. Quit anyway?", @"Message text for alert")];
+					[alert setInformativeText:NSLocalizedString(@"Quitting now will lose any changes you have made since the last successful save.", @"Informative text for alert")];
+					[alert addButtonWithTitle:NSLocalizedString(@"Quit Anyway", @"Button title for alert (default return)")];
+					[alert addButtonWithTitle:NSLocalizedString(@"Cancel", @"Button title for alert (alternate return)")];
 					NSInteger response = [alert runModal];
 					[alert release];
 					

@@ -1,6 +1,6 @@
 // RRCoreData RRCoreDataStack.m
 //
-// Copyright © 2011, Roy Ratcliffe, Pioneering Software, United Kingdom
+// Copyright © 2008-2011, Roy Ratcliffe, Pioneering Software, United Kingdom
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the “Software”), to deal
@@ -27,21 +27,34 @@
 
 @implementation RRCoreDataStack
 
-@synthesize context = _context;
+@synthesize context     = _context;
+@synthesize coordinator = _coordinator;
+@synthesize model       = _model;
 
 - (NSApplicationTerminateReply)applicationShouldTerminate:(NSApplication *)sender alertBlock:(NSApplicationTerminateReply (^)(void))alertBlock
 {
-	NSApplicationTerminateReply reply;
-	if (_context)
+	NSManagedObjectContext *context = [self context];
+	return context ? [context applicationShouldTerminate:sender alertBlock:alertBlock] : NSTerminateNow;
+}
+
+- (NSPersistentStoreCoordinator *)coordinatorOrNewWithModel
+{
+	NSPersistentStoreCoordinator *coordinator;
+	if ((coordinator = [self coordinator]) == nil)
 	{
-		reply = [_context applicationShouldTerminate:sender alertBlock:alertBlock];
+		[self setCoordinator:coordinator = [[[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self modelOrMergedFromMainBundle]] autorelease]];
 	}
-	else
+	return coordinator;
+}
+
+- (NSManagedObjectModel *)modelOrMergedFromMainBundle
+{
+	NSManagedObjectModel *model;
+	if ((model = [self model]) == nil)
 	{
-		// no context, terminate right away
-		reply = NSTerminateNow;
+		[self setModel:model = [NSManagedObjectModel mergedModelFromBundles:[NSArray arrayWithObject:[NSBundle mainBundle]]]];
 	}
-	return reply;
+	return model;
 }
 
 @end

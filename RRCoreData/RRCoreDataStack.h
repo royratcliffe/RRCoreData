@@ -1,6 +1,6 @@
 // RRCoreData RRCoreDataStack.h
 //
-// Copyright © 2011, Roy Ratcliffe, Pioneering Software, United Kingdom
+// Copyright © 2008-2011, Roy Ratcliffe, Pioneering Software, United Kingdom
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the “Software”), to deal
@@ -27,7 +27,16 @@
 @interface RRCoreDataStack : NSObject
 
 @property(retain, NS_NONATOMIC_IOSONLY) NSManagedObjectContext *context;
+@property(retain, NS_NONATOMIC_IOSONLY) NSPersistentStoreCoordinator *coordinator;
+@property(retain, NS_NONATOMIC_IOSONLY) NSManagedObjectModel *model;
 
 - (NSApplicationTerminateReply)applicationShouldTerminate:(NSApplication *)sender alertBlock:(NSApplicationTerminateReply (^)(void))alertBlock;
+
+- (NSPersistentStoreCoordinator *)coordinatorOrNewWithModel;
+
+/*!
+ * @brief Lazy getter for model property; lazily merges a model from assets in the main bundle if you have not yet set up the stack's model.
+ */
+- (NSManagedObjectModel *)modelOrMergedFromMainBundle;
 
 @end
