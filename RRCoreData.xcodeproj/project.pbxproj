@@ -389,6 +389,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RRCoreData/RRCoreData-Prefix.pch";
 				INFOPLIST_FILE = "RRCoreData/RRCoreData-Info.plist";
+				LD_DYLIB_INSTALL_NAME = "@executable_path/../Frameworks/$(EXECUTABLE_PATH)";
 				PRODUCT_NAME = RRCoreData;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -403,6 +404,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RRCoreData/RRCoreData-Prefix.pch";
 				INFOPLIST_FILE = "RRCoreData/RRCoreData-Info.plist";
+				LD_DYLIB_INSTALL_NAME = "@executable_path/../Frameworks/$(EXECUTABLE_PATH)";
 				PRODUCT_NAME = RRCoreData;
 				WRAPPER_EXTENSION = framework;
 			};
